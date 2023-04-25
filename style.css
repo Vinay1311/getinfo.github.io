@@ -1,0 +1,223 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+.containor{
+  position: relative;
+}
+  /* Bgimg */
+
+  .image-container {
+    width: 100%;
+    height: 660px; /* set the desired height here */
+    overflow:visible;
+    z-index: 0;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* chat-box */
+.chat-box {
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.info{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  padding: 15px;
+}
+.info img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.Clr-Scrn{
+  font-size: large;
+  float: left;
+  left: 95%;
+  top: 5%;
+}
+.btn-group{
+  height: 50px;
+  width: 98%;
+  top: 57%;
+  margin-left: 3px;
+  
+}
+.chat-input{
+  margin-top: 270px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  padding: 15px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+}
+
+.chat-input input{
+  width: 87%;
+  height: 100%;
+  background-color: #4f5d7323;
+  border-radius: 30px;
+  color: black ;
+  font-size: 1.2em;
+  padding: 0 15px;
+}
+
+  
+  .toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    z-index: 9999;
+  }
+  
+  /* For Chat */
+  .message {
+    position: relative;
+    top: -20px;
+    max-width: 60%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    float: right;
+    clear: both;
+
+  }
+  
+  .bot-message {
+    max-width: 60%;
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    float: left;
+    clear: both;
+  }
+  
+
+  
+/* For screens between 350px and 575px */
+@media (min-width: 350px) and (max-width: 575px) {
+  nav {
+    height: 60px;
+    position: fixed;
+  }
+
+  .info {
+    height: 15%;
+  }
+
+  .chat-box {
+    height: 75vh;
+    top: 60px;
+  }
+
+  .btn-group{
+    top: 53%;
+    
+  }
+
+  .chat-input {
+    height: 70px;
+    margin-top: 10%;
+  }
+}
+  
+/* For screens between 576px and 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  nav {
+    height: 60px;
+    position: fixed;
+  }
+
+  .info {
+    height: 15%;
+  }
+
+  .chat-box {
+    height: 75vh;
+    top: 60px;
+  }
+
+  .btn-group{
+    top: 57%;
+    
+  }
+
+  .chat-input {
+    height: 70px;
+    margin-top: 10%;
+  }
+}
+
+/* For screens between 768px and 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav {
+    height: 60px;
+  }
+
+  .info {
+    height: 15%;
+  }
+
+  .chat-box {
+    height: 70vh;
+    top: 80px;
+  }
+
+  .chat-input {
+    height: 70px;
+    margin-top: 10%;
+  }
+}
+
+/* For screens larger than 992px */
+@media (min-width: 992px) {
+  nav {
+    height: 60px;
+  }
+
+  .info {
+    height: 15%;
+  }
+
+  .chat-box {
+    height: 70vh;
+    top: 100px;
+  }
+
+  .chat-input {
+    height: 14%;
+    margin-top: 5%;
+  }
+}
